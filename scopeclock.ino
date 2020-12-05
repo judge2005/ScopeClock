@@ -59,6 +59,7 @@
 StringConfigItem hostName("hostname", 63, "ScopeClock");
 StringConfigItem timeZone("timeZone", 63, "EST5EDT,M3.2.0,M11.1.0");	// POSIX timezone format
 IntConfigItem modeConfig("mode", cmExtents);
+IntConfigItem movDelay("mov_delay", 20);
 
 // For captive portal and other stuff
 AsyncWebServer server(80);
@@ -153,7 +154,8 @@ struct tm dt;
 	datetimeConvert(false, false, &dt, 0);	// Get current local time
 
 // every hr move the screen a little as an antiburn measure
-    crtJiggle(1 + (dt.tm_hour & 3));
+// OSC7.0 hardware does this already
+//    crtJiggle(1 + (dt.tm_hour & 3));
 }
 
 //--- clock 1 minute tick -----------------------------------------------------------------------------------------------
@@ -365,16 +367,21 @@ volatile bool flagTrigger;     // flag set every 20mS to start CRT refresh
 
 void crtCheck()
 {
-//	portENTER_CRITICAL_ISR(&timerMux);
+	if (mov.isOff()) {
+		digitalWrite(pinRelay, LOW);
+	} else {
+		digitalWrite(pinRelay, HIGH);
 
-    if (flagTrigger)                           // wait for CRT interrupt
-    {
-        //    	portEXIT_CRITICAL_ISR(&timerMux);
-        everyTrigger();
-        flagTrigger = false;
-    } else {
-        //    	portEXIT_CRITICAL_ISR(&timerMux);
-    }
+		//	portENTER_CRITICAL_ISR(&timerMux);
+		if (flagTrigger)                           // wait for CRT interrupt
+		{
+			//    	portEXIT_CRITICAL_ISR(&timerMux);
+			everyTrigger();
+			flagTrigger = false;
+		} else {
+			//    	portEXIT_CRITICAL_ISR(&timerMux);
+		}
+	}
 }
 
 // If we use a separate task to drive the clock display
@@ -555,7 +562,7 @@ void setup()
 	pinMode(pinRelay, OUTPUT);
 	pinMode(pinTrigger, INPUT_PULLUP);
 
-	mov.setDelay(1);
+	mov.setDelay(movDelay);
 	mov.setOnTime(millis());
 //	mov.setCallback(&sendMovMsg);
 
