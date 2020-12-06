@@ -1,3 +1,9 @@
+/*
+ * Copyright Paul Andrews
+ *
+ * Not available for commercial use.
+ */
+
 #include "Arduino.h"
 
 #include "freertos/task.h"			// For FreeRTOS task functions
@@ -32,7 +38,7 @@
 #include "GPIOButton.h"
 #include "MovementSensor.h"
 
-// Oscilloscope clock functions
+// Oscilloscope clock functions courtesy of http://www.sgitheach.org.uk/
 #include "services.h"
 #include "crt.h"
 #include "bounce.h"

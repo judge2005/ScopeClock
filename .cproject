@@ -32,7 +32,6 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/scopeclock/libraries/DNSServer/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/scopeclock/libraries/FS/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/scopeclock/libraries/ESPmDNS/src}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/scopeclock/libraries/Wire/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/scopeclock/libraries/Time}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/scopeclock/libraries/ESPConfig}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/scopeclock/libraries/EEPROM/src}&quot;"/>
@@ -40,6 +39,8 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/scopeclock/libraries/Update/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/scopeclock/libraries/SPIFFS/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/scopeclock/libraries/Button}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/scopeclock/libraries/FreeRTOS/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/scopeclock/libraries/Wire/src}&quot;"/>
 								</option>
 								<inputType id="io.sloeber.compiler.cpp.sketch.input.394150948" name="CPP source files" superClass="io.sloeber.compiler.cpp.sketch.input"/>
 							</tool>
@@ -58,7 +59,6 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/scopeclock/libraries/DNSServer/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/scopeclock/libraries/FS/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/scopeclock/libraries/ESPmDNS/src}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/scopeclock/libraries/Wire/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/scopeclock/libraries/Time}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/scopeclock/libraries/ESPConfig}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/scopeclock/libraries/EEPROM/src}&quot;"/>
@@ -66,6 +66,8 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/scopeclock/libraries/Update/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/scopeclock/libraries/SPIFFS/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/scopeclock/libraries/Button}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/scopeclock/libraries/FreeRTOS/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/scopeclock/libraries/Wire/src}&quot;"/>
 								</option>
 								<inputType id="io.sloeber.compiler.c.sketch.input.1511615757" name="C Source Files" superClass="io.sloeber.compiler.c.sketch.input"/>
 							</tool>
@@ -84,7 +86,6 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/scopeclock/libraries/DNSServer/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/scopeclock/libraries/FS/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/scopeclock/libraries/ESPmDNS/src}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/scopeclock/libraries/Wire/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/scopeclock/libraries/Time}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/scopeclock/libraries/ESPConfig}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/scopeclock/libraries/EEPROM/src}&quot;"/>
@@ -92,6 +93,8 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/scopeclock/libraries/Update/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/scopeclock/libraries/SPIFFS/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/scopeclock/libraries/Button}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/scopeclock/libraries/FreeRTOS/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/scopeclock/libraries/Wire/src}&quot;"/>
 								</option>
 								<inputType id="io.sloeber.compiler.S.sketch.input.739590621" name="Assembly source files" superClass="io.sloeber.compiler.S.sketch.input"/>
 							</tool>
